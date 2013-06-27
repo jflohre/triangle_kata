@@ -1,9 +1,9 @@
 require 'spec_helper'
 
-describe Rectangles do
-  let(:rectangle) { rectangle = Rectangles.new}
+describe Rectangle do
+  let(:rectangle) { rectangle = Rectangle.new}
   it 'should return a rectangle' do
-      rectangle.should be_an_instance_of Rectangles
+      rectangle.should be_an_instance_of Rectangle
     end
 #    describe "not a true rectangle" do 
 # # Less than 0 sides    

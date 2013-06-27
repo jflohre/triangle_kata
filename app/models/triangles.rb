@@ -1,4 +1,4 @@
-class Triangles < ActiveRecord::Base
+class Triangle < Polygon 
 
   def is_real_triangle?(triangle)
     # if side1.instance_of? String

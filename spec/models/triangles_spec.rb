@@ -1,9 +1,9 @@
 require 'spec_helper'
 
-describe Triangles do
-  let(:triangle) { triangle = Triangles.new}
+describe Triangle do
+  let(:triangle) { triangle = Triangle.new}
   it 'should return a triangle' do
-    triangle.should be_an_instance_of Triangles
+    triangle.should be_an_instance_of Triangle
   end
    # describe "not a true triangle" do 
 # Less than 0 sides    
@@ -30,8 +30,6 @@ describe Triangles do
 #       triangle.is_real_triangle?(1,2,'three').should == "Can't have letters for sides"
 #     end
 #   end
-
-
   describe 'Equilateral' do
     it "should return 'Equilateral Triangle' for a triangle with the sides 5,5,5" do
       triangle.is_real_triangle?([5,5,5]).should == "Equilateral Triangle"

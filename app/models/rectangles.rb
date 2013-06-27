@@ -1,4 +1,5 @@
-class Rectangles < ActiveRecord::Base
+class Rectangle 
+
   def type_of_rectangle(rectangle)
     # if string_for_top?(top) || string_for_bottom?(bottom) ||string_for_left?(left) || string_for_right?(right)
     #   "Can't have letters for sides"
