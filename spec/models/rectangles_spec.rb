@@ -29,6 +29,35 @@ describe Rectangles do
     it "should return 'Can't have letters for sides' for a rectangle with the sides 1,two,3,4" do
       rectangle.type_of_rectangle(1,'two',3,4).should == "Can't have letters for sides"
     end
-
+    it "should return 'Can't have letters for sides' for a rectangle with the sides 1,2,three,4" do
+      rectangle.type_of_rectangle(1,2,'three',4).should == "Can't have letters for sides"
+    end
+    it "should return 'Can't have letters for sides' for a rectangle with the sides 1,2,3,four" do
+      rectangle.type_of_rectangle(1,2,3,'four').should == "Can't have letters for sides"
+    end
+  end
+  describe 'square' do
+    it "should return 'square' for (2,2,2,2)" do
+      rectangle.type_of_rectangle(2,2,2,2).should == "Square"
+    end
+    it "should return 'square' for (5,5,5,5)" do
+      rectangle.type_of_rectangle(5,5,5,5).should == "Square"
+    end
+  end
+  describe 'rectangle' do
+    it  "should return 'rectangle' for (2,2,5,5)" do
+      rectangle.type_of_rectangle(2,2,5,5).should == "Rectangle"
+    end
+    it  "should return 'rectangle' for (2,2,5,5)" do
+      rectangle.type_of_rectangle(4,4,3,5).should == "Rectangle"
+    end
+  end
+  describe 'quadrilateral' do
+    it "should return 'quadrilateral' for (1,2,3,4)" do
+      rectangle.type_of_rectangle(1,2,3,4).should == "Quadrilateral"
+    end
+    it "should return 'quadrilateral' for (1,2,3,4)" do
+      rectangle.type_of_rectangle(5,2,4,1).should == "Quadrilateral"
+    end
   end
 end

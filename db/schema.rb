@@ -11,7 +11,12 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130627054250) do
+ActiveRecord::Schema.define(:version => 20130627131233) do
+
+  create_table "polygons", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "rectangles", :force => true do |t|
     t.datetime "created_at", :null => false
