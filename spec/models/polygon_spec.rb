@@ -45,7 +45,8 @@ describe Polygon do
       polygon = Polygon.new([4,4])
       polygon.type_of_polygon.should == "Can't have only 2 sides"
     end 
-#Triangle
+  end
+  describe "Triangle" do 
     it "should return 'Equilateral Triangle' for a triangle with the sides [5,5,5]" do
       polygon = Polygon.new([5,5,5])
       polygon.type_of_polygon.should == "Equilateral Triangle"
@@ -54,7 +55,5 @@ describe Polygon do
       polygon = Polygon.new([5,2,5])
       polygon.type_of_polygon.should == "Isosceles Triangle"
     end
- 
   end
-
 end
