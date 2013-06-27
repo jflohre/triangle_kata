@@ -5,6 +5,9 @@ class Polygon < ActiveRecord::Base
       "Can't have letters for sides"
     elsif invalid_number?(array)
       "Sides can't be <= 0"
+    elsif array.count == 2
+      "Can't have only 2 sides"
+      
     else
       true
     end
