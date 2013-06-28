@@ -6,6 +6,7 @@ describe Polygon do
       polygon.should be_an_instance_of Polygon
     end
   describe "not a true polygon" do 
+    
 # Less than 0 sides    
     it "should return 'Sides can't be <= 0' for a polygon with the sides [0,1,2,3]" do
       polygon = Polygon.new([0,1,2,3])
